@@ -125,3 +125,28 @@ Console.WriteLine($"Patch Version: {demoHeader.PatchVersion}");
 Console.WriteLine($"Game: {demoHeader.Game}");
 Console.WriteLine($"Demoversionname: {demoHeader.DemoVersionName}");
 ```
+
+### Classes for files in EDemoCommands
+```
+static {
+        K2C = new KindToClassMessageRegistry(18);
+        K2C.put(Demo.EDemoCommands.DEM_ClassInfo_VALUE, Demo.CDemoClassInfo.class);
+        K2C.put(Demo.EDemoCommands.DEM_ConsoleCmd_VALUE, Demo.CDemoConsoleCmd.class);
+        K2C.put(Demo.EDemoCommands.DEM_CustomData_VALUE, Demo.CDemoCustomData.class);
+        K2C.put(Demo.EDemoCommands.DEM_CustomDataCallbacks_VALUE, Demo.CDemoCustomDataCallbacks.class);
+        K2C.put(Demo.EDemoCommands.DEM_FileHeader_VALUE, Demo.CDemoFileHeader.class);
+        K2C.put(Demo.EDemoCommands.DEM_FileInfo_VALUE, Demo.CDemoFileInfo.class);
+        K2C.put(Demo.EDemoCommands.DEM_FullPacket_VALUE, Demo.CDemoFullPacket.class);
+        K2C.put(Demo.EDemoCommands.DEM_Packet_VALUE, Demo.CDemoPacket.class);
+        K2C.put(Demo.EDemoCommands.DEM_SendTables_VALUE, Demo.CDemoSendTables.class);
+        K2C.put(Demo.EDemoCommands.DEM_SignonPacket_VALUE, Demo.CDemoPacket.class);
+        K2C.put(Demo.EDemoCommands.DEM_StringTables_VALUE, Demo.CDemoStringTables.class);
+        K2C.put(Demo.EDemoCommands.DEM_Stop_VALUE, Demo.CDemoStop.class);
+        K2C.put(Demo.EDemoCommands.DEM_SyncTick_VALUE, Demo.CDemoSyncTick.class);
+        K2C.put(Demo.EDemoCommands.DEM_UserCmd_VALUE, Demo.CDemoUserCmd.class);
+        K2C.put(Demo.EDemoCommands.DEM_SaveGame_VALUE, Demo.CDemoSaveGame.class);
+        K2C.put(Demo.EDemoCommands.DEM_SpawnGroups_VALUE, Demo.CDemoSpawnGroups.class);
+        K2C.put(Demo.EDemoCommands.DEM_AnimationData_VALUE, Demo.CDemoAnimationData.class);
+        K2C.put(Demo.EDemoCommands.DEM_AnimationHeader_VALUE, Demo.CDemoAnimationHeader.class);
+    }
+```
